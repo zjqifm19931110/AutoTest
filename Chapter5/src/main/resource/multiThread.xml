@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="thread" parallel="classs" thread-count="2">
+
+    <!--
+    methods级别：所有用例都可以在不同的线程下执行，
+    tests级别:不同的test tag下的用例可以在不同的线程下执行，相同的test tag下的用例只能在相同的线程下执行
+    classs:相同的classs在同一个线程中执行
+    parallel:多线程级别，是方法 methods/tests
+    thread-count:线程最多是2个
+    xml文件配置这种方式不能指定线程池，只有方法上才可以指定线程池
+    -->
+    <test name="demo1">
+        <classes>
+            <class name="com.zjq.test.MultiThreadOnxml"/>
+        </classes>
+    </test>
+
+    <test name="demo2">
+        <classes>
+            <class name="com.zjq.test.MultiThreadOnxml"/>
+        </classes>
+    </test>
+
+</suite>

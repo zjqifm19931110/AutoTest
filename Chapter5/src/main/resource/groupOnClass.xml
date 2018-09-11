@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suitename">
+    <!--<test name="run all">-->
+        <!--<classes>-->
+            <!--<class name="com.zjq.test.groups.GroupsOnClass1"></class>-->
+            <!--<class name="com.zjq.test.groups.GroupsOnClass2"></class>-->
+            <!--<class name="com.zjq.test.groups.GroupsOnClass3"></class>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="only run teacher">
+        <groups>
+            <run >
+                <include name="stu" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.zjq.test.groups.GroupsOnClass1"></class>
+            <class name="com.zjq.test.groups.GroupsOnClass2"></class>
+            <class name="com.zjq.test.groups.GroupsOnClass3"></class>
+        </classes>
+    </test>
+
+</suite>

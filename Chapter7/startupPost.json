@@ -10,5 +10,23 @@
       "headers":
       {"Content-Type":"text/html;charset=gbk"}
     }
+  },
+
+  {
+    "description":"带参数的请求",
+    "request":{
+      "uri":"/postwithparam",
+      "method":"post",
+      "forms":{
+        "name":"huhansan",
+        "sex":"man"
+      }
+    },
+    "response":{
+      "text":"带着参数回来了",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
   }
 ]

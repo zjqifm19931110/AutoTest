@@ -1,0 +1,25 @@
+[
+  {
+    "description":"带cooks请求",
+    "request":{
+      "uri":"/post/with/cookies",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "queries":{
+        "name":"huhansan",
+        "sex":"20"
+      }
+    },
+    "response":{
+      "json":{
+        "wanglaosi":"success",
+        "status":100
+      },
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  }
+]
